@@ -123,7 +123,7 @@ $(document).ready(function(){
     }, "Ingrese un formato de hora válido (Horas:minutos).");
 
 jQuery.validator.addMethod("plate", function(value, element) {
-        return this.optional(element) || /^[A-Z]{3}-[0-9]{4}$/i.test(value);
+        return this.optional(element) || /^[A-Z]{2,3}-[0-9]{4}$/i.test(value);
     }, "Ingrese una placa válida.");
 
 
