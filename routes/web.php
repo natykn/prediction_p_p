@@ -11,9 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'PicoPlacaMainController@index');
 
 Route::get('/picoplacapredictor', 'PicoPlacaMainController@index');
 Route::post('/picoplacapredictor', 'PicoPlacaMainController@postPrediction');
