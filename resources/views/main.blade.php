@@ -150,7 +150,7 @@
                 </div>
               {!! Form::model('picoplacapredictor/index', array('id'=>'picoPlacaFrm', 'class'=>'form-horizontal',"method"=>"post")) !!}
 
-                    <div class="row form-group">
+                    <div class="col-md-12 form-group">
                         <div class="col-md-offset-2 col-md-4 text-left">
                             {!! Form::label('*Plate:', null, array('class' => 'control-label'))!!}
                         </div>

@@ -20,20 +20,21 @@ class PicoPlacaPredictorModel extends Model
    		$this->time = $time;
    }
 
-
+   //get the last digit from a car plate 
    public function getLastDigitFromPlate(){
-   		return substr($this->plate, -1);
+   	return substr($this->plate, -1);
    }
 
+   //get the day name from a date
    public function getDayNameFromDate(){
-	//convert string to date 
-	$dateValue = DateTime::createFromFormat("Y-m-d",$this->date);
+	   //convert string to date 
+	   $dateValue = DateTime::createFromFormat("Y-m-d",$this->date);
    	return $dateValue->format("l");
    }
  
    public function predictPicoPlaca(){
-   	$isInPicoPlaca = false;
-   	$dateFormat="Y-m-d H:i";
+   	$isInPicoPlaca = false; //flat to save boolean prediction
+   	$dateFormat="Y-m-d H:i"; 
    	$dayName=$this->getDayNameFromDate();
    	$lastPlateDigit= $this->getLastDigitFromPlate();
 
@@ -44,6 +45,7 @@ class PicoPlacaPredictorModel extends Model
    							"Thursday" => [7, 8],
    							"Friday" => [9, 0]
    							];
+      //pico placa restriction by hour
    	$restrictionsByHour = [["7:00","9:30"],
    							["16:00","19:30"]
    							];
@@ -69,7 +71,7 @@ class PicoPlacaPredictorModel extends Model
    	return $isInPicoPlaca;
 
    }
-
+   //creates a formatted response to display the prediction 
    public function setPredictionText($predictionValue){
    		return "The car can ".($predictionValue?"not ":"")." be on road";
    	}
