@@ -4,15 +4,15 @@ This exercise was created as a web app, using MVC software architectural pattern
 This exercise was solved using:
 
 1. Laravel 5.5.14
-2. php 7.0.22
-3. javascript (jquery)
-4. css  
-5. bootstrap 
-6. phpunit 
+2. Php 7.0.22
+3. Javascript (jquery)
+4. Css  
+5. Bootstrap 
+6. Phpunit 
 7. OS ubuntu 
 
 
-Most of the files inside this repositories are a skeletor from Laravel 5.4, the files with the actual solution are: 
+Most of the files inside this repositories are from Laravel skeletor, the files with the actual solution are: 
 
 
 Controller
@@ -31,12 +31,12 @@ Unit Test
 - prediction_p_p-master/tests/Features/TestPicoPlaca.php
 
 
-Install and test the exercise 
+Install and test exercise 
 
-1. download .ova
-2. load .ova in virtual box
-3. turn on the virtual machine
-4. virtual machine password: ruby12345
+1. Download .ova
+2. Load .ova in virtual box
+3. Turn on the virtual machine
+4. Virtual machine password: ruby12345
 5. To start the app 
   - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run php artisan serve
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal1.png)
@@ -45,7 +45,7 @@ Install and test the exercise
 Preview
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/responsePicoPlaca.png)
 
-6. to run unit test
+6. To run unit test
  - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run vendor/bin/phpunit
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal2.png)
 
