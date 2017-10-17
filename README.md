@@ -33,11 +33,10 @@ Most of the files inside this repositories are from Laravel skeletor, the files 
 
 ### Install and test exercise 
 
-1. Download .ova
-2. Load .ova in virtual box
+1. Download the .ova file attached to the email.
+2. Load the .ova file in virtual box
 3. Turn on the virtual machine
-4. Virtual machine password: ruby12345
-5. To start the app 
+4. To start the app 
   - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run php artisan serve
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal1.png)
 
@@ -45,7 +44,7 @@ Most of the files inside this repositories are from Laravel skeletor, the files 
 ###### Preview
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/responsePicoPlaca.png)
 
-6. To run unit test
+5. To run unit test
  - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run vendor/bin/phpunit
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal2.png)
 
