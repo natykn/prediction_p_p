@@ -44,3 +44,8 @@ Install and test the exercise
 
 Preview
 ![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/responsePicoPlaca.png)
+
+6. to run unit test
+ - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run vendor/bin/phpunit
+![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal2.png)
+
