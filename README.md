@@ -39,8 +39,8 @@ Install and test the exercise
 4. virtual machine password: ruby12345
 5. To start the app 
   - Go to naty@rubyvm:~/phpProjects/pico-placa-projects and run php artisan serve
-![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/termina1.png)
+![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/terminal1.png)
 
 
 Preview
-![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/response.png)
+![alt text](https://github.com/natykn/prediction_p_p/blob/master/imageReadme/responsePicoPlaca.png)
