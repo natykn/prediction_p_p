@@ -7,6 +7,8 @@
 
         <title>Laravel</title>
 
+
+
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('bootstrap/css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('bootstrap/css/bootstrap-theme.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('media/css/styles.css') }}">
@@ -29,6 +31,9 @@
         <script type="text/javascript" src="{{ URL::asset('media/js/bootstrap-filestyle.min.js') }}"></script>
         <script type="text/javascript" src="{{ URL::asset('media/js/jquery/jquery.timepicker.js') }}"></script>
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('media/js/jquery/jquery.timepicker.css') }}">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 
         <script type="text/javascript">
@@ -150,43 +155,49 @@
                 </div>
               {!! Form::model('picoplacapredictor/index', array('id'=>'picoPlacaFrm', 'class'=>'form-horizontal',"method"=>"post")) !!}
 
-                    <div class="col-md-12 form-group">
-                        <div class="col-md-offset-2 col-md-4 text-left">
-                            {!! Form::label('*Plate:', null, array('class' => 'control-label'))!!}
+                    <div class="row col-md-12 form-group">
+                        <div class="col-md-5 text-left">
+                            {!! Form::label('*Plate:', null, array('class' => 'control-label col-md-12'))!!}
                         </div>
-                        <div class="col-md-4">
-                             {!! Form::text('plate', null,  array('id'=>'plate','class' => 'form-control','maxlength'=>'8')) !!}
-                        </div>
-                    </div>
-                    <div class="col-md-12 form-group">
-                         <div class="col-md-offset-2 col-md-4 text-left">
-                            {!! Form::label('*Date:', null, array('class' => 'control-label'))!!}
-                        </div>
-                         <div class="col-md-4">
-                             {!! Form::text('date', null,  array('id'=>'date','class' => 'form-control')) !!}
+                        <div class="col-md-7">
+                             {!! Form::text('plate', null,  array('id'=>'plate','class' => 'form-control col-md-6','maxlength'=>'8')) !!}
                         </div>
                     </div>
-                    <div class="col-md-12 form-group">
-                         <div class="col-md-offset-2 col-md-4 text-left">
-                            {!! Form::label('*Time:', null, array('class' => 'control-label'))!!}
+                    <div class="row col-md-12 form-group">
+                         <div class="col-md-5 text-left">
+                            {!! Form::label('*Date:', null, array('class' => 'control-label col-md-12'))!!}
                         </div>
-                        <div class="col-md-4">
-                             {!! Form::text('time', null,  array('id'=>'time','class' => 'form-control')) !!}
+                         <div class="col-md-7">
+                             {!! Form::text('date', null,  array('id'=>'date','class' => 'form-control col-md-6')) !!}
                         </div>
                     </div>
-            
-
-                     <div class="text-center row">
-                        <br>
-                        {!! Form::button('Predict', array('id'=>'predictBtn' ,'type' => 'submit')) !!}
+                    <div class="row col-md-12 form-group">
+                         <div class="col-md-5 text-left">
+                            {!! Form::label('*Time:', null, array('class' => 'control-label col-md-12'))!!}
+                        </div>
+                        <div class="col-md-7">
+                             {!! Form::text('time', null,  array('id'=>'time','class' => 'form-control col-md-6')) !!}
+                        </div>
                     </div>
+                    <br>
+                    <hr class="col-md-12">
+                    <div class="col-md-12 text-center">
+                     
+                        {!! Form::button('Predict', array('id'=>'predictBtn' ,'type' => 'submit','class' => 'col-md-3')) !!}
+                   
+                    </div>
+                     
                 {!! Form::close() !!}
 
-                <div class="row">
-                    <br>
-                    <div id="responseDiv" class="text-center row"></div>
+                <br>
+                <div class="col-md-12 text-center">
+                    
+                    <div id="responseDiv" class="col-md-12"></div>
                </div>
             </div>
         </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
     </body>
 </html>
